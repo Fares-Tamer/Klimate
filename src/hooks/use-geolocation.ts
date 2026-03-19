@@ -4,13 +4,13 @@ import { useEffect, useState } from "react";
 interface GeoLocationState {
     coordinates: Coordinates | null;
     error: string | null;
-    isLoading: boolean;
+    isLoading: boolean | null;
 }
 export function useGeoLocation() {
     const [locationData, setLocationData] = useState<GeoLocationState>({
         coordinates: null,
         error: null,
-        isLoading: null 
+        isLoading:null , 
     }) 
 
     const getLocation = () => {

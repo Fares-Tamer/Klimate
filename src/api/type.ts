@@ -61,3 +61,8 @@ export interface GeocodingResponse {
     country:string;
     state:string;
 } 
+
+export interface AlertErrorProps {
+  locationError: string;
+  getLocation: () => void;
+}

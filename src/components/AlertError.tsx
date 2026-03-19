@@ -2,8 +2,9 @@ import React from 'react'
 import { Alert, AlertDescription, AlertTitle } from './ui/alert'
 import { AlertCircleIcon, MapPin } from 'lucide-react'
 import { Button } from './ui/button'
+import { AlertErrorProps } from '@/api/type'
 
-export default function AlertError({ locationError ,getLocation}) {
+export default function AlertError({ locationError ,getLocation}:AlertErrorProps) {
     return <>
         <Alert variant="destructive" className="max-w-md">
             <AlertCircleIcon className='h-4 w-4' />
