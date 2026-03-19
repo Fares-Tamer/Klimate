@@ -95,7 +95,9 @@ export default function WeatherDashboard() {
           {/* forecast */} 
           <WeatherForecast data={foreCastQuery?.data ?? {list:[],city:{name:'',country:'',sunrise:0,sunset:0}}}/>
         </div>
+        
       </div>
+
 
     </div>
 
